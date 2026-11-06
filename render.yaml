@@ -10,15 +10,18 @@ services:
       - key: ENTORNO
         value: publicado
       - key: CONFIAR_PROXY
-        value: "true"
+        value: 'true'
       - key: DB_PROVEEDOR
         value: supabase
+      # Las entidades eligen sus tipos de columna al importarse, antes de leer DB_PROVEEDOR.
+      - key: DB_MOTOR
+        value: postgres
       - key: ARCHIVOS_PROVEEDOR
         value: supabase
       - key: DB_SINCRONIZAR
-        value: "true"
+        value: 'true'
       - key: SEMBRAR_SI_VACIA
-        value: "true"
+        value: 'true'
       - key: NOTIFICACIONES
         value: expo
       # Cadena del «Session pooler» de Supabase (puerto 5432).

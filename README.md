@@ -342,7 +342,8 @@ pueden cambiar; revisalos en sus paneles.
 3. **Render**: <https://render.com> → **New → Blueprint** y seleccioná el repositorio de la API.
    Render lee `render.yaml` y solicita: `DB_URL` (la cadena del paso 1),
    `SUPABASE_PROYECTO` (la referencia del proyecto), `S3_REGION`, `S3_BUCKET`,
-   `S3_ACCESS_KEY_ID` y `S3_SECRET_ACCESS_KEY`. El blueprint genera `JWT_SECRETO`.
+   `S3_ACCESS_KEY_ID` y `S3_SECRET_ACCESS_KEY`. El blueprint configura `DB_MOTOR=postgres`
+   y genera `JWT_SECRETO`.
 4. Cuando el servicio esté listo, verificá `https://<host-de-la-api>/salud` y
    `https://<host-de-la-api>/docs`. Luego ejecutá:
 
